@@ -17,8 +17,6 @@ const schema = makeExecutableSchema({
   resolvers,
 });
 
-// Initialize the app
-
 // The GraphQL endpoint
 app.use('/graphql', express.json(), graphqlExpress({ schema }));
 

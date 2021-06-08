@@ -19,7 +19,6 @@
   "author": "Lesego Seritili",
   "license": "MIT",
   "dependencies": {
-    "apollo-datasource-rest": "^0.14.0",
     "apollo-server": "^2.25.0",
     "apollo-server-express": "^1.4.0",
     "axios": "^0.21.1",

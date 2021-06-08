@@ -5,8 +5,8 @@ const resolvers ={
 	Query:{
 		orders:async (parent,args,context,info) =>{
 			try{
-				let res
-				let response = []
+				let res;
+				let response = [];
 				switch(args.category){
 					case 1:
 						res = await axios.get(BASE_URL+`public/`+args.currencyPair+`/orderbook`)
@@ -26,7 +26,7 @@ const resolvers ={
 						break;
 					case 2:
 						res = await axios.get(BASE_URL+`public/`+args.currencyPair+`/orderbook/full`)
-						let response = []
+						response = []
 						if(res.data.Asks){
 							res.data.Asks.forEach(ask =>{
 								response.push(ask)
